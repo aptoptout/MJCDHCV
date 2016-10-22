@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resumee Martijn de Heer — Graphic Designer — Berlin / The Hague</title>
+
+    <!-- Meta data for previews in facebook, google, etc. !-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="The resumee —or, curriculum vitae— of Martijn de Heer. A graphic designer who graduated from the Royal Academy of Art, The Hague - The Netherlands. Currently living in Berlin.">
+    <meta property="og:title" content="Resumee Martijn de Heer — Graphic Designer" />
+    <meta property="og:image" content="images/resumee.gif" />
+    <meta property="dc:creator" content="de Heer, Martijn"/>
+    <meta property="dc:created" content="2015-12-05T00:00:00Z" />
+    <meta property="dc:modified" content="2015-12-05T00:00:00Z" />
+
+    <!-- Link stylesheets!-->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="column column-one">
+        <article>
+          <section id="intro">
+            <h3 class="bullet">
+              Martijn de Heer
+            </h3>
+            <h3 class="bullet">
+              Bornholmer Straße 76, 10439 Berlin
+            </h3>
+          </section>
+          <section id="education">
+            <h3 class="bullet">
+              Royal Academy of Art, The Hague <br />
+              Graphic Design (Full time, Bachelor (HBO))
+            </h3>
+          </section>
+        </article>
+      </div>
+
+
+      <div class="column column-two"></div>
+      <div class="column column-three"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("h3.bullet").each(function(){
+          noteHeight(this);
+          // $(this).css("color", "red");
+        })
+
+        function noteHeight(i){
+          var i = $(i);
+          var data = i.attr('class');
+          // var text = i.text();
+          console.log(data);
+          // ths.css("color", "red");
+
+          // var a = $( '[data-note="'+i+'"]' );
+          // var offsetA =  a.offset();
+          // $( '[data-content="'+i+'"]' ).offset({ top: offsetA.top });
+          // $( '[data-content="'+i+'"]' ).attr('id', 'data-content-'+i);
+        }
+
+      });
+    </script>
+
+  </body>
+</html>
