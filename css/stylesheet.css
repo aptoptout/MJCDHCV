@@ -99,12 +99,14 @@ section::after {
   border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
 }
 
+/*
 .bullet::after {
   content: "[name] & [surname] ⃕ ";
 
   font-family: "monaco";
   font-size: 10px;
 }
+*/
 
 /* typography */
 h3 {
@@ -113,6 +115,10 @@ h3 {
 
 em {
   font-style: normal;
+}
+
+.bullet {
+  margin-top: 1.5em;
 }
 
 /*
@@ -145,4 +151,18 @@ em:hover::before, em:hover::after {
 }
 */
 
+.bullet-note {
+  padding-top: 1.5em;
 
+  margin: 0;
+
+  font-family: "monaco";
+  font-size: 0.5em;
+  line-height: 1.5em;
+
+  color: rgba(0,0,0,0.5);
+}
+
+.bullet-note:hover {
+  color: rgba(0,0,0,1);
+}
