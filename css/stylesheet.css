@@ -44,14 +44,13 @@ body {
 .column-two {
   order: 1;
   flex-grow: 1;
-  border-right: 2px dashed rgba(0, 0, 0, 0.1);
 }
 .column-three {
   order: 3;
   flex-grow: 1;
-  border-left: 2px dashed rgba(0, 0, 0, 0.1);
 }
 
+/*
 .column-two::after {
   content: "";
   position: fixed;
@@ -77,6 +76,7 @@ body {
 
   border-left: 2px dashed rgba(0, 0, 0, 0.1);
 }
+*/
 
 section {
   width: auto;
@@ -95,6 +95,8 @@ section::after {
   right: 0;
 
   margin-top: 1.5em;
+
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
 }
 
 .bullet::after {
