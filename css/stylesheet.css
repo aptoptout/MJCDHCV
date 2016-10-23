@@ -43,11 +43,11 @@ body {
 }
 .column-two {
   order: 1;
-  flex-grow: 1;
+  flex-grow: 0.75;
 }
 .column-three {
   order: 3;
-  flex-grow: 1;
+  flex-grow: 1.25;
 }
 
 /*
@@ -96,7 +96,7 @@ section::after {
 
   margin-top: 1.5em;
 
-  border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -152,7 +152,7 @@ em:hover::before, em:hover::after {
 */
 
 .bullet-note {
-  padding-top: 1.5em;
+  padding-top: 1em;
 
   margin: 0;
 
@@ -161,8 +161,24 @@ em:hover::before, em:hover::after {
   line-height: 1.5em;
 
   color: rgba(0,0,0,0.5);
+  /*border-bottom: 1px solid rgba(0,0,0,0.5);*/
+}
+
+#education .bullet:nth-of-type(2)::before{
+  content:"";
+  position: absolute;
+  display: inline-block;
+
+  width:3em;
+  height: 0;
+
+  margin-left: -1em;
+  margin-top: -0.25em;
+
+  border-top: 2px solid rgba(0, 0, 0, 1.0);
 }
 
 .bullet-note:hover {
   color: rgba(0,0,0,1);
+  /*border-bottom: 1px solid rgba(0,0,0,1);*/
 }
