@@ -281,7 +281,7 @@ em {
 }
 
 .side-note::after {
-  content: "–— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— ";
+  content: "\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D\2D";
   position: absolute;
   white-space: nowrap;
   overflow: hidden;
@@ -323,7 +323,7 @@ em {
 }
 
 .sub-note::after {
-  content: "–— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— –— ";
+  content: "..................................................................................................";
   position: absolute;
   white-space: nowrap;
   overflow: hidden;

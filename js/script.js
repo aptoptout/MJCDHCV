@@ -176,7 +176,7 @@ function getRelPos(i) {
 
 function checkWindow(){
   windowWidth = $(window).width();
-  console.log(windowWidth);
+  // console.log(windowWidth);
 
   if(windowWidth < 1280 && windowWidth > 800){
     $("h3[data-content='higher education']").attr("data-content", "higher edu.");
@@ -298,29 +298,3 @@ function checkWindow(){
     $(".side-note[data-content='basic communication']").attr("data-content", "basic commu.");
   }
 }
-
-
-
-
-// function pointHeight(i){
-
-//   var i = $(i);
-
-//   var subj = i.attr('data-point');
-//   var subjTop = i.offset().top;
-//   var subjHeight = i.height();
-
-//   var colLeft = $(".column-two").offset().left;
-//   var colRight = colLeft + colWidth;
-//   var colWidth = $(".column-two").width();
-
-//   // console.log(subj, subjHeight);
-
-//   var getThisDiv = $(".datapoint[data-point='" + subj + "']");
-//   getThisDiv.css({"top": subjTop, "height": subjHeight, "width": colWidth});
-
-//   console.log(getThisDiv.text());
-
-//   $("<style>.datapoint:after { width: " + colWidth + "px; }</style>" ).appendTo( getThisDiv );
-
-// }
